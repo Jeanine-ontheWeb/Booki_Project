@@ -253,6 +253,9 @@ white-space: nowrap;
 .hebergements p.card__subtitle {
   font-size: 14px;
 }
+p.card__subtitle {
+    margin: 0;
+}
 
 /*****Section Populaires******/
 .main__populaires {
@@ -339,6 +342,7 @@ white-space: nowrap;
 }
 .activites__card-title {
   padding: 20px 19px 20px 19px;
+  margin: 0;
 }
 /*****Footer*****/
 section.footer__nav {
@@ -361,7 +365,6 @@ section.footer__nav {
   font-size: 16px;
 }
 .footer__nav-list ul {
-  list-style: none;
   padding: 0;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
