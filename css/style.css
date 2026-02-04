@@ -56,8 +56,7 @@ img {
 .header__logo {
   width: 61px;
   height: 19px;
-padding: 30px 0 30px 0;
-
+  padding: 30px 0 30px 0;
 }
 
 .header__nav {
@@ -151,14 +150,13 @@ i.fa-solid.fa-info.search__infos-icon {
 
 /*****Filtres****/
 .main__search-filters {
-
   display: inline-flex;
   align-items: center;
   gap: 15px;
 }
 
 .search__filters-choices span {
-white-space: nowrap;
+  white-space: nowrap;
 }
 .search__filters-subtitle {
   font-weight: bold;
@@ -171,7 +169,7 @@ white-space: nowrap;
 }
 
 .search__filters-choices {
-  display: inline-flex; 
+  display: inline-flex;
   gap: 10px;
   padding: 14px 19px 14px 19px;
   border: 2px #d9d9d9 solid;
@@ -239,6 +237,10 @@ white-space: nowrap;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card__content {
+  padding-left: 15px;
+}
+
 .hebergements__cards-photo {
   width: 100%;
   height: 124px;
@@ -254,7 +256,7 @@ white-space: nowrap;
   font-size: 14px;
 }
 p.card__subtitle {
-    margin: 0;
+  margin: 0;
 }
 
 /*****Section Populaires******/
@@ -350,19 +352,24 @@ section.footer__nav {
   display: flex;
   padding: 20px;
   gap: 15px;
+  width: 100%;
+  height: 163px;
+
 }
+
 .footer__nav-list h4 {
   font-size: 18px;
   margin: 0;
 }
 .footer__nav-list {
-  display: flex;
-  width: 446px;
-  flex-direction: column;
+display: flex;
+width: 100%;
+height: 163px;
+flex-direction: column;
 }
 .footer__nav-list li {
-  margin-bottom: 10px;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .footer__nav-list ul {
   padding: 0;
@@ -372,29 +379,27 @@ section.footer__nav {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .body {
+  .body {
     width: 100%;
   }
   h3 {
     font-size: 16px;
-}
+  }
 
-.header__menu-item:active {
-  color: #0065fc;
-  border-top: solid 2px #0065fc;
-
-}
-.main__search-filters {
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-    }
-.search__filters-choices:active {
-  background: #deebff;
-  cursor: default;
-}
+  .header__menu-item:active {
+    color: #0065fc;
+    border-top: solid 2px #0065fc;
+  }
+  .main__search-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .search__filters-choices:active {
+    background: #deebff;
+    cursor: default;
+  }
   .main__hebergements-and-populaires {
     flex-direction: column;
   }
@@ -429,7 +434,7 @@ section.footer__nav {
   .main__activites img {
     width: 100%;
     height: 200px;
-}
+  }
 }
 
 /* Small devices (phones, less than 768px) */
