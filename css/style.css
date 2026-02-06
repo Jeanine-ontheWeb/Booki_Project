@@ -453,7 +453,6 @@ section.footer__nav {
 
   main {
     width: 100%;
-    padding: 0 50px 0 50px;
   }
 
   i.fa-solid.fa-magnifying-glass {
@@ -491,6 +490,7 @@ section.footer__nav {
     border-bottom: solid 2px #0065fc;
     border-top: none;
   }
+
   .header__menu-item:active {
     padding-bottom: 15px;
     border-bottom: solid 2px #0065fc;
@@ -513,6 +513,11 @@ section.footer__nav {
     box-shadow: 0px 4px 4px 0px #00000040;
   }
 
+  .main__search-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
   .search__filters-list {
     display: grid;
     gap: 15px;
