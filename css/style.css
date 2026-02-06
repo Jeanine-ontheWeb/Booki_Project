@@ -225,7 +225,7 @@ i.fa-solid.fa-info.search__infos-icon {
 }
 
 /*****Section Hebergements******/
-.main__hebergements {
+#main__hebergements {
   width: 65%;
   padding: 30px;
 }
@@ -328,17 +328,17 @@ p.card__subtitle {
 }
 
 /***** Section Activités *****/
-.main__activites {
+#main__activites {
   padding: 30px;
 }
 
-.main__activites > div {
+#main__activites > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-.main__activites .card {
+#main__activites .card {
   display: flex;
   border-radius: 20px;
   box-shadow: 0px 3px 15px 0px #0000001a;
@@ -346,7 +346,7 @@ p.card__subtitle {
   flex-direction: column;
 }
 
-.main__activites img {
+#main__activites img {
   width: 100%;
   height: 380px;
   border-radius: 20px 20px 0 0;

@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -32,8 +32,12 @@
           />
 
           <ul class="header__menu">
-            <li class="header__menu-item">Hébergements</li>
-            <li class="header__menu-item">Activités</li>
+            <a href="#main__hebergements">
+              <li class="header__menu-item">Hébergements</li></a
+            >
+            <a href="#main__activites"
+              ><li class="header__menu-item">Activités</li></a
+            >
           </ul>
         </nav>
       </header>
@@ -102,7 +106,7 @@
         </section>
         <!--Section hébergements en réponse a l'input du header-->
         <div class="main__hebergements-and-populaires">
-          <section class="main__hebergements">
+          <section id="main__hebergements">
             <h2 class="main__hebergement-title">Hébergements à Marseille</h2>
             <div class="main__hebergements-articles">
               <a href="#">
@@ -368,8 +372,9 @@
             </div>
           </section>
         </div>
+
         <!--Section basse avec les activités à faire-->
-        <section class="main__activites">
+        <section id="main__activites">
           <h2>Activités à Marseille</h2>
           <div class="main__activites-list">
             <a href="#">
@@ -445,4 +450,3 @@
     </div>
   </body>
 </html>
->
