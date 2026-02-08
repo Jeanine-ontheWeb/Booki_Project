@@ -19,7 +19,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0 50px 0 50px;
-    width: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 main {
@@ -89,7 +89,7 @@ img {
   border-bottom: none;
 }
 
-/**Section supérieure**/
+/*******Barre de recherche*******/
 .main__search {
   display: flex;
   flex-direction: column;
@@ -156,16 +156,13 @@ i.fa-solid.fa-info.search__infos-icon {
   align-items: center;
 }
 
-/*****Filtres****/
+/*****Filtres*****/
 .main__search-filters {
   display: flex;
   gap: 15px;
   align-items: stretch;
 }
 
-.search__filters-choices span {
-  white-space: nowrap;
-}
 .search__filters-subtitle {
   font-weight: bold;
   display: flex;
@@ -193,6 +190,9 @@ i.fa-solid.fa-info.search__infos-icon {
 
   font-weight: bold;
 }
+.search__filters-choices span {
+  white-space: nowrap;
+}
 .search__filters-choices:hover {
   background: #deebff;
   cursor: default;
@@ -214,7 +214,7 @@ i.fa-solid.fa-info.search__infos-icon {
   margin: 0;
   font-size: 22px;
 }
-/****** Hebergements And Populaires ***********/
+/****** Hebergements et Populaires ***********/
 .main__hebergements-and-populaires {
   display: flex;
   gap: 40px;
@@ -247,17 +247,14 @@ i.fa-solid.fa-info.search__infos-icon {
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
-.card__content {
-  padding-left: 15px;
-}
-
 .hebergements__cards-photo {
   width: 100%;
   height: 124px;
   border-radius: 20px 20px 0 0;
 }
-
+.card__content {
+  padding-left: 15px;
+}
 .hebergements .card__content {
   display: flex;
   flex-direction: column;
@@ -265,8 +262,6 @@ i.fa-solid.fa-info.search__infos-icon {
 }
 .hebergements p.card__subtitle {
   font-size: 14px;
-}
-p.card__subtitle {
   margin: 0;
 }
 
@@ -296,10 +291,6 @@ p.card__subtitle {
   font-weight: 700;
 }
 
-.neutral-star {
-  color: var(--main-bg-color);
-}
-
 .populaires__cards img {
   width: 33%;
   height: 136px;
@@ -327,6 +318,9 @@ p.card__subtitle {
 
 .populaires__cards .card__rating {
   margin-bottom: 5px;
+}
+.neutral-star {
+  color: var(--main-bg-color);
 }
 
 /***** Section Activités *****/
@@ -377,13 +371,14 @@ section.footer__nav {
   height: 163px;
   flex-direction: column;
 }
+.footer__nav-list ul {
+  padding: 0;
+}
 .footer__nav-list li {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.footer__nav-list ul {
-  padding: 0;
-}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -461,7 +456,6 @@ section.footer__nav {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-
   }
 
   i.fa-solid.fa-magnifying-glass {
