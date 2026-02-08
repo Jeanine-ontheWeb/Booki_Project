@@ -487,6 +487,10 @@ section.footer__nav {
     padding: 0;
     justify-content: space-evenly;
   }
+  .header__menu a {
+    display: flex;
+    flex: 1;
+  }
 
   .header__menu-item {
     font-weight: 400;
